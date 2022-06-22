@@ -1,0 +1,43 @@
+
+.oculto {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        padding: 1.4rem 0;
+    }
+}
+
+.carrito-compras {
+    position: relative;
+    cursor: pointer;
+
+    &:hover .contenido {
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: $gris;
+        padding: 2rem;
+        max-width: 40rem;
+        // min-height: 20rem;
+        // min-width: 25rem;
+    }
+
+    img {
+        max-width: 10rem;
+    }
+}
+
+.tabla {
+    text-align: justify;
+    line-height: 1.6;
+
+    th, td {
+        padding: .5rem;
+    }
+}

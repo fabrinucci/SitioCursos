@@ -1,0 +1,11 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    text-align: center;
+}
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}

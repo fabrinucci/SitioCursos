@@ -1,0 +1,25 @@
+.footer {
+    border: 1px solid darken($gris, 10);
+
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+        @include telefono {
+            flex-direction: row;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+    flex: 1;
+    @include desktop {
+        flex: 0 1 calc( 30% - 1rem );
+    }
+
+    a {
+        margin-bottom: .5rem;
+    }
+}

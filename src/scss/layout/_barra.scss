@@ -1,0 +1,42 @@
+.barra {
+    min-height: 6rem;
+    padding: 1rem;
+    @include degradado($morado, $naranja);
+    display: flex;
+    align-items: center;
+
+    .iconos {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        
+        @include desktop {
+            flex-direction: row;
+        }
+        .icono {
+            flex: 1;
+            background-position: 5% center !important;
+
+            @include tablet {
+                background-position: 20% center !important;
+            }
+
+            @include desktop {
+                background-position: left center !important;
+            }
+
+            background-size: 2.2rem;
+            text-align: center;
+
+            &.icono1 {
+                @include background-imagen('../img/icono1.webp');
+            }
+            &.icono2 {
+                @include background-imagen('../img/icono2.webp');
+            }
+            &.icono3 {
+                @include background-imagen('../img/icono3.webp');
+            }
+        }
+    }
+}

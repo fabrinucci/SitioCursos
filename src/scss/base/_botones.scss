@@ -1,0 +1,7 @@
+.boton-azul {
+    @include boton($azul, inline-block);
+}
+
+.boton-morado {
+    @include boton($morado, block);
+}

@@ -1,0 +1,44 @@
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .curso {
+        flex: 0 1 calc( 50% - 1rem );
+
+        @include tablet {
+            flex: 0 1 calc( 33% - 1.5rem );
+        }
+
+        @include desktop {
+            flex: 0 1 calc( 25% - 1.5rem );
+        }
+    }
+}
+
+.info-curso {
+    padding: 2rem;
+    h4 {
+        margin: 0;
+    }
+    img {
+        max-width: 8rem;
+    }
+    p {
+        color: $negro;
+    }
+    .precio {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: $bold;
+
+        .regular {
+            text-decoration: line-through;
+            margin-right: 2rem;
+            color: $rojo;
+        }
+        .oferta {
+            color: $verde;
+        }
+    }
+}
